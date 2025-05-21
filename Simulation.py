@@ -18,8 +18,7 @@ def SimulationThermostat(wT,Tname, wE, Ename, wG, Gname, everyN):
     fx, fy, fz, epot = force.forceLJ_and_walls(x, y, z, settings.N, settings.eps, 
                                                settings.mass, settings.sig, settings.cutoff,
                                                settings.L, settings.epsWall, settings.sigWall, wE)
-     
-    _, _, fz_wall = force.forceWall() 
+
 
     # open documents for eq run
     if wT:
