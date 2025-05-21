@@ -66,7 +66,7 @@ def pbc(xi, xj, L):
         
     return rij
 
-############### Wall force ###############
+############### LJ force and wall force ###############
 def forceLJ_and_walls(x, y, z, N, eps, mass, sig, cutoff, L, epsWall, sigWall, wE):
 
     fx = np.zeros(N)
